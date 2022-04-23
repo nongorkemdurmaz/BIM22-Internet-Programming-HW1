@@ -33,30 +33,30 @@ Create a static website for university. Your site should have at least 8 pages. 
 - On this page, announcements of the university should be displayed in the form of a list.
 - Clicking on the tabs on the left should open the relevant page.
 - The currently selected tab should be shown as selected. (The selected tab should be in larger font size.)
-- 
+
 `UNIVERSITY`
 - This page should contain information about the university. Examples of this information are "About Us", "Numbers of Students and Staff", "Administrative Units" etc. can be given. The preparation of the contents herein is entirely left to you.
 - There should be a show less/more button. When this button is pressed, the relevant text should be displayed as shorter or longer.
 - There should be a picture of the university on this page, and the picture should be transparent when hovering over the picture.
-- 
+
 `ACADEMICS`
 - On this page, information about faculties, institutes and vocational higher schools should be given in 3 separate tables.
-- 
+
 `STUDENTS`
 - This page may contain some useful information for students. Page content is up to you.
 - This tab should have "Student Login" and "Documents" subheadings. When the Students link is hovered, these two subheadings will appear and the user will select one of them.
 - When you click on the sub-tabs on "Students" tab, the relevant page should open. 
-- 
+
 `STUDENT LOGIN`
 - In this section, login with username and password. Keep the user password secret. When the user presses the login button, it redirects to the "Home" page.
 - It should be checked whether the user name and password fields are empty. If these fields are empty, they should give a warning and should not redirect to the "Home" page.
-- 
+
 `DOCUMENTS`
 - This page should contain some documents that students can use. The relevant documents must be downloaded when the links are clicked.
-- 
+
 `CAMPUS LIFE`
 - There should be a video of the university on this page. When the user clicks the video, it should start playing (Note: Do not download or put any video file into your homework folder. Import them directly by giving the exact link of the web page - should be an external link, not local -, or you may use YouTube videos. However, the video file must be rendered on the same page (campuslife.html), not in a new window).
-- 
+
 `RESEARCH`
 - There should be a graphic or picture containing information about the number of publications. (It is available on our site.) The image/graphic should enlarge when hovered over it.
 

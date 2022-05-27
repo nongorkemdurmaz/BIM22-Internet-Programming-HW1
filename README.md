@@ -6,7 +6,7 @@ Delivery of homework given to us by our teacher Burcu Yılmazer
 Things to do for homework;
 
 
-Create a static website for university. Your site should have at least 8 pages. Use HTML and CSS codes only. DO NOT include any “Bootstrap” or “JavaScript” codes to your web sites for this homework. The names of the web pages are listed below:
+Create a static website for university. Your site should have at least 8 pages. Use HTML and CSS codes only. DO NOT include any  “JavaScript” codes to your web sites for this homework. The names of the web pages are listed below:
 
 * `Page 1: home.html`
 * `Page 2: university.html`

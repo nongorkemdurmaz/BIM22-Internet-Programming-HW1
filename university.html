@@ -7,9 +7,15 @@
         <meta name="description" content="BIM222 HW1 university.html">
         <meta name="author" content="Görkem Durmaz">
         <link rel="stylesheet" href="external.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <style>
 
-        /* more - less toggle */
+        /* more - less toggle */ 
+        h2 {
+            margin-top: 20px;
+        }
         #toggle {
             display: none;
         }
@@ -44,355 +50,366 @@
     </head>
     
     <body>
-        <div style="width: 80%; margin: 20px; margin-left: 10%;">
+        <header style="margin: 20px; margin-left: 10%;display:block;" class="col-md-12">
             <a href="https://www.eskisehir.edu.tr/" style="margin-right: -80px;">
                 <img style="width: 10%; height: auto;" width="283" height="261" src="logo.png" title="Logo" />
             </a>
-            <h2 class="main" style="color: #911d0e; display: inline; margin: 0; position: absolute; margin-top: 20px;">ESKİŞEHİR TECHNICAL UNIVERSITY</h2>
-        </div>
-    
-        <div style="text-align: center; ">
-            <img class="photo" src="ESTU.jpeg" width="1024" height="500" title="Campus" style="border-radius: 30px;" />
-        </div>
-        <nav class="menu">
+            <h2 class="main" style="color: #911d0e; display: inline; margin: 0; margin-top: 20px;">
+                ESKİŞEHİR TECHNICAL UNIVERSITY</h2>
+        </header>
+            
+        <nav class="menu col-sm-2">
             <ul style="list-style-type: none;">
                 <li><a href="home.html"><button class="button">Home</button></a></li>
-                <li><a href="university.html"><button class="onClickButton">University</button></a></li>
+                <li><a href="university.html"><button class="button">University</button></a></li>
                 <li><a href="academics.html"><button class="button">Academics</button></a></li>
                 <li class="dropdown">
                     <a href="students.html"><button class="button">Students</button></a>
                     <div class="dropdown-content">
-                        <a href="login.html"><button class="button">Login</button></a>
-                        <a href="documents.html"><button class="button">Documents</button></a>
+                        <a href="login.html"><button class="button" style="background-color: grey">Login</button></a>
+                        <a href="documents.html"><button class="button" style="background-color: grey">Documents</button></a>
                     </div>
                 </li>
                 <li><a href="research.html"><button class="button">Research</button></a></li>
                 <li><a href="campuslife.html"><button class="button">Campus Life</button></a></li>
             </ul>
         </nav>
+    <main class="col-sm-10">
+                    <div class="content">
+                        <div class="text-center">
+                            <img class="photo" src="ESTU.jpeg" width="80%" height="500" title="Campus" style="border-radius: 30px;" />
+                        </div>
         <div class="content">
-            <h1 style="color: white; font-weight: bold; font-size: 40px;">About Us</h1>
-            <p class="content-font">
-                <ul>
-                    <div>
-                        <p style="display: inline;">
-                            Eskişehir Technical University of Eskişehir Technical University, Science, Culture, and also in the center of Eskişehir, which is the city of Eskişehir, 
-                            which is published in the Official Gazette, which is published in the Official Gazette. 
-                            Consists of the Application Center.
-                        </p>
+            
+        
+            <div style="color: white;" class="text-center">
+                <h1 style="color: white; font-weight: bold; font-size: 40px;">About Us</h1>
+                <p class="content-font">
+                    <ul>
+                        <div>
+                            <p style="display: inline;">
+                                Eskişehir Technical University of Eskişehir Technical University, Science, Culture, and also in the center of Eskişehir, which is the city of Eskişehir, 
+                                which is published in the Official Gazette, which is published in the Official Gazette. 
+                                Consists of the Application Center.
+                            </p>
+                        
+                        <input type="checkbox" id="toggle">
+                            <p id="about-more">
+                                Eskişehir Technical University works to prepare its students as the most equipped and competitive individuals for the future in creative and 
+                                dynamic educational environments, with its competent teaching staff, each of whom follows the developments in their field and shares all their 
+                                time with their students, in its units with a strong infrastructure, where it carries out education and research activities. The operation of 
+                                the international Hasan Polatkan Airport, located in the 2 Eylül Campus of our university, is carried out by our Faculty of Aviation and Space Sciences. 
+                                There are international flights to Hasan Polatkan Airport by different airline companies on various days of the week.
+                            </p>
+                        <label for="toggle" id="toggle-label">
+                        </div>
+                    </ul>
+                </p>
+                <h2 class="modal-title">Students</h2>
+                <table BORDER align="center" 
+                class="table-dark">
+    
+                    <TR style="font-weight: bold;">
+                        <TD>FACULTY / VOCATIONAL SCHOOLS</TD>
+                        <TD>WOMAN</TD><TD>MAN</TD><TD>TOTAL</TD>
+                    </TR>
+                    <TR>
+                        <TD>Faculty of Science</TD>
+                        <TD>694</TD> <TD>614</TD><TD>1308</TD>
+                    </TR>
+                    <TR>
+                        <TD>Faculty of Aviation And Astronautics</TD> 
+                        <TD>235</TD><TD>817</TD><TD>1052</TD>
+                    </TR>
+                    <TR>
+                        <TD>Architecture and Design Faculty</TD> 
+                        <TD>1100</TD><TD>471</TD><TD>1571</TD>
+                    </TR>
+                    <TR>
+                        <TD>Engineering Faculty</TD> 
+                        <TD>1132</TD><TD>2142</TD><TD>3274</TD>
+                    </TR>
+                    <TR>
                     
-                    <input type="checkbox" id="toggle">
-                        <p id="about-more">
-                            Eskişehir Technical University works to prepare its students as the most equipped and competitive individuals for the future in creative and 
-                            dynamic educational environments, with its competent teaching staff, each of whom follows the developments in their field and shares all their 
-                            time with their students, in its units with a strong infrastructure, where it carries out education and research activities. The operation of 
-                            the international Hasan Polatkan Airport, located in the 2 Eylül Campus of our university, is carried out by our Faculty of Aviation and Space Sciences. 
-                            There are international flights to Hasan Polatkan Airport by different airline companies on various days of the week.
-                        </p>
-                    <label for="toggle" id="toggle-label">
-                    </div>
-                </ul>
-            </p>
-            <h2 class="table-title">Students</h2>
-            <table BORDER align="center" 
-            class="table-style">
-
-                <TR style="font-weight: bold;">
-                    <TD>FACULTY / VOCATIONAL SCHOOLS</TD>
-                    <TD>WOMAN</TD><TD>MAN</TD><TD>TOTAL</TD>
-                </TR>
+                        <TD>Sports Science Faculty</TD> 
+                        <TD>247</TD> <TD>440</TD><TD>687</TD>
+                    </TR>
+                    <TR>
+                        <TD>PORSUK Vocational School</TD> 
+                        <TD>272</TD><TD>699</TD><TD>971</TD>
+                    </TR>
+                    <TR>
+                        <TD>Vocational School of Transportation</TD> 
+                        <TD>225</TD> <TD>772</TD><TD>997</TD>
+                    </TR>
+                    <TR>
+                        <TD>Graduate Education Institute</TD> 
+                        <TD>885</TD><TD>1155</TD><TD>2040</TD>
+                    </TR>
+                    <TR style="font-size: 18px; font-weight: bold;">
+                        <TD >FACULTY/ SCHOOL/ INSTITUTE TOTAL</TD> 
+                        <TD>4790</TD><TD>7110</TD><TD>11900</TD>
+                    </TR>
+                </table>
+    
+                <h2 class="modal-title"">University Top Management</h2>
+                <table BORDER align="center" 
+                class="table-dark">           
                 <TR>
-                    <TD>Faculty of Science</TD>
-                    <TD>694</TD> <TD>614</TD><TD>1308</TD>
-                </TR>
+                    <TD>Rector</TD> 
+                    <TD>Prof. Dr. Tuncay DÖĞEROĞLU</TD><TD>tdogeroglu@eskisehir.edu.tr</TD>
+                </TR>            
                 <TR>
-                    <TD>Faculty of Aviation And Astronautics</TD> 
-                    <TD>235</TD><TD>817</TD><TD>1052</TD>
+                    <TD>Rector Assistant</TD> 
+                    <TD>Prof. Dr. Alper ÇABUK</TD><TD>acabuk@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Rector Assistan</TD> 
+                    <TD>Prof. Dr. Gürsoy ARSLAN</TD><TD>garslan@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Secretary General V.</TD> 
+                    <TD>Hasan AKIN</TD><TD>hasanakin@eskisehir.edu.tr</TD>
+                </TR> 
+            </table>
+            <h2 class="modal-title"">Members of Eskişehir Technical University Senate</h2>
+                <table BORDER align="center" 
+                class="table-dark">                  
+                <TR>
+                    <TD style=" font-size: 18px; font-weight: bold;">Natural Members</TD> 
+                    
+                </TR> 
+                    <TD>Rector</TD> 
+                    <TD>Prof. Dr. Tuncay DÖĞEROĞLU</TD><TD>tdogeroglu@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Rector Assistant</TD> 
+                    <TD>Prof. Dr. Alper ÇABUK</TD><TD>acabuk@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Rector Assistant</TD> 
+                    <TD>Prof. Dr. Gürsoy ARSLAN</TD><TD>garslan@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Dean of Faculty of Science</TD> 
+                    <TD>Prof. Dr. Yeliz MERT KANTAR</TD><TD>ymert@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Dean of the Faculty of Aeronautics and Astronautics</TD> 
+                    <TD>Prof. Dr. Öznur USANMAZ</TD><TD>ousanmaz@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Dean of the Faculty of Architecture and Design V.</TD> 
+                    <TD>Prof. Dr. Osman TUTAL</TD><TD>otutal@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Dean of the Faculty of Engineering</TD> 
+                    <TD>Prof. Dr. Onur KAYA</TD><TD>onur_kaya@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Dean of Faculty of Sports Sciences</TD> 
+                    <TD>Prof. Dr. Metin ARGAN</TD><TD>margan@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Director of Graduate Education Institute</TD> 
+                    <TD>Prof. Dr. Murat TANIŞLI</TD><TD>mtanisli@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Director of the Earth and Space Sciences Institute</TD> 
+                    <TD>Doç. Dr. Uğur AVDAN</TD><TD>uavdan@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Director of the Institute of Transportation Sciences</TD> 
+                    <TD>Prof. Dr. Ö.Mete KOÇKAR</TD><TD>mkockar@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Director of Porsuk Vocational School</TD> 
+                    <TD>Prof. Dr. Hüseyin KOCA</TD><TD>hkoca@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD>Director of Vocational School of Transport</TD> 
+                    <TD>Prof. Dr. Ö.Mete KOÇKAR</TD><TD>mkockar@eskisehir.edu.tr</TD>
+                </TR>            
+                <TR>
+                    <TD style=" font-size: 18px; font-weight: bold;">Selected Members</TD> 
+                    
+                </TR>            
+                <TR>
+                    <TD>Faculty of Aeronautics and Astronautics</TD> 
+                    <TD>Prof. Dr. M.Şerif KAVSAOĞLU</TD><TD>mskavsaoglu@eskisehir.edu.tr</TD>
                 </TR>
                 <TR>
                     <TD>Architecture and Design Faculty</TD> 
-                    <TD>1100</TD><TD>471</TD><TD>1571</TD>
+                    <TD>Prof. Dr. Nuray ÖZASLAN</TD><TD>nozaslan@eskisehir.edu.tr</TD>
                 </TR>
                 <TR>
                     <TD>Engineering Faculty</TD> 
-                    <TD>1132</TD><TD>2142</TD><TD>3274</TD>
+                    <TD>Prof. Dr. Ferhat KARA</TD><TD>fkara@eskisehir.edu.tr</TD>
+                </TR>
+    
+                <TR>
+                    <TD>Faculty of Sports Sciences</TD> 
+                    <TD>Prof. Dr. Hayri ERTAN</TD><TD>Prof. Dr. Hayri ERTAN</TD>
                 </TR>
                 <TR>
-                
-                    <TD>Sports Science Faculty</TD> 
-                    <TD>247</TD> <TD>440</TD><TD>687</TD>
+                    <TD>Reporter</TD> 
+                    <TD>Hasan AKIN</TD><TD>hasanakin@eskisehir.edu.tr</TD>
                 </TR>
                 <TR>
-                    <TD>PORSUK Vocational School</TD> 
-                    <TD>272</TD><TD>699</TD><TD>971</TD>
-                </TR>
-                <TR>
-                    <TD>Vocational School of Transportation</TD> 
-                    <TD>225</TD> <TD>772</TD><TD>997</TD>
-                </TR>
-                <TR>
-                    <TD>Graduate Education Institute</TD> 
-                    <TD>885</TD><TD>1155</TD><TD>2040</TD>
-                </TR>
-                <TR style="font-size: 18px; font-weight: bold;">
-                    <TD >FACULTY/ SCHOOL/ INSTITUTE TOTAL</TD> 
-                    <TD>4790</TD><TD>7110</TD><TD>11900</TD>
+                    <TD>Student Representative</TD> 
+                    <TD>Osman ŞİMŞEK</TD><TD>osman_sismsek@eskisehir.edu.tr</TD>
                 </TR>
             </table>
-
-            <h2 class="table-title"">University Top Management</h2>
+            <h2 class="modal-title"">UNIVERSITY BOARD MEMBERS</h2>
             <table BORDER align="center" 
-            class="table-style">           
-            <TR>
-                <TD>Rector</TD> 
-                <TD>Prof. Dr. Tuncay DÖĞEROĞLU</TD><TD>tdogeroglu@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Rector Assistant</TD> 
-                <TD>Prof. Dr. Alper ÇABUK</TD><TD>acabuk@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Rector Assistan</TD> 
-                <TD>Prof. Dr. Gürsoy ARSLAN</TD><TD>garslan@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Secretary General V.</TD> 
-                <TD>Hasan AKIN</TD><TD>hasanakin@eskisehir.edu.tr</TD>
-            </TR> 
-        </table>
-        <h2 class="table-title"">Members of Eskişehir Technical University Senate</h2>
-            <table BORDER align="center" 
-            class="table-style">                  
-            <TR>
-                <TD style=" font-size: 18px; font-weight: bold;">Natural Members</TD> 
-                
-            </TR> 
-                <TD>Rector</TD> 
-                <TD>Prof. Dr. Tuncay DÖĞEROĞLU</TD><TD>tdogeroglu@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Rector Assistant</TD> 
-                <TD>Prof. Dr. Alper ÇABUK</TD><TD>acabuk@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Rector Assistant</TD> 
-                <TD>Prof. Dr. Gürsoy ARSLAN</TD><TD>garslan@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Dean of Faculty of Science</TD> 
-                <TD>Prof. Dr. Yeliz MERT KANTAR</TD><TD>ymert@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Dean of the Faculty of Aeronautics and Astronautics</TD> 
-                <TD>Prof. Dr. Öznur USANMAZ</TD><TD>ousanmaz@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Dean of the Faculty of Architecture and Design V.</TD> 
-                <TD>Prof. Dr. Osman TUTAL</TD><TD>otutal@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Dean of the Faculty of Engineering</TD> 
-                <TD>Prof. Dr. Onur KAYA</TD><TD>onur_kaya@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Dean of Faculty of Sports Sciences</TD> 
-                <TD>Prof. Dr. Metin ARGAN</TD><TD>margan@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Director of Graduate Education Institute</TD> 
-                <TD>Prof. Dr. Murat TANIŞLI</TD><TD>mtanisli@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Director of the Earth and Space Sciences Institute</TD> 
-                <TD>Doç. Dr. Uğur AVDAN</TD><TD>uavdan@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Director of the Institute of Transportation Sciences</TD> 
-                <TD>Prof. Dr. Ö.Mete KOÇKAR</TD><TD>mkockar@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Director of Porsuk Vocational School</TD> 
-                <TD>Prof. Dr. Hüseyin KOCA</TD><TD>hkoca@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD>Director of Vocational School of Transport</TD> 
-                <TD>Prof. Dr. Ö.Mete KOÇKAR</TD><TD>mkockar@eskisehir.edu.tr</TD>
-            </TR>            
-            <TR>
-                <TD style=" font-size: 18px; font-weight: bold;">Selected Members</TD> 
-                
-            </TR>            
-            <TR>
-                <TD>Faculty of Aeronautics and Astronautics</TD> 
-                <TD>Prof. Dr. M.Şerif KAVSAOĞLU</TD><TD>mskavsaoglu@eskisehir.edu.tr</TD>
-            </TR>
-            <TR>
-                <TD>Architecture and Design Faculty</TD> 
-                <TD>Prof. Dr. Nuray ÖZASLAN</TD><TD>nozaslan@eskisehir.edu.tr</TD>
-            </TR>
-            <TR>
-                <TD>Engineering Faculty</TD> 
-                <TD>Prof. Dr. Ferhat KARA</TD><TD>fkara@eskisehir.edu.tr</TD>
-            </TR>
-
-            <TR>
-                <TD>Faculty of Sports Sciences</TD> 
-                <TD>Prof. Dr. Hayri ERTAN</TD><TD>Prof. Dr. Hayri ERTAN</TD>
-            </TR>
-            <TR>
-                <TD>Reporter</TD> 
-                <TD>Hasan AKIN</TD><TD>hasanakin@eskisehir.edu.tr</TD>
-            </TR>
-            <TR>
-                <TD>Student Representative</TD> 
-                <TD>Osman ŞİMŞEK</TD><TD>osman_sismsek@eskisehir.edu.tr</TD>
-            </TR>
-        </table>
-        <h2 class="table-title"">UNIVERSITY BOARD MEMBERS</h2>
-        <table BORDER align="center" 
-        class="table-style">  
-            <TR>
-                <TD style=" font-size: 18px; font-weight: bold;">Natural Members</TD> 
-                
-            </TR>
-            <TR>
-                <TD>Rector</TD> 
-                <TD>Prof. Dr. Tuncay DÖĞEROĞLU</TD><TD>tdogeroglu@eskisehir.edu.tr</TD>
-            </TR>   
-            <TR>
-                <TD>Faculty of Science Dean</TD> 
-                <TD>Prof. Dr. Yeliz MERT KANTAR</TD><TD>ymert@eskisehir.edu.tr</TD>
-            </TR>  
-            <TR>
-                <TD>Dean of Aeronautics and Space Sciences</TD> 
-                <TD>Prof. Dr. Öznur USANMAZ</TD><TD>ousanmaz@eskisehir.edu.tr</TD>
-            </TR>  
-            <TR>
-                <TD>Dean of Architecture and Design Faculty V.</TD> 
-                <TD>Prof. Dr. Osman TUTAL</TD><TD>otutal@eskisehir.edu.tr</TD>
-            </TR>
-            <TR>
-                <TD>Dean of Engineering Faculty </TD> 
-                <TD>Prof. Dr. Onur KAYA</TD><TD>onur_kaya@eskisehir.edu.tr</TD>
-            </TR>
-            <TR>
-                <TD>Dean of Faculty of Sports Sciences V.</TD> 
-                <TD>Prof. Dr. Metin ARGAN</TD><TD>margan@eskisehir.edu.tr</TD>
-            </TR>
-            <TR>
-                <TD style="font-size: 18px; font-weight: bold;">Selected Members</TD> 
-            </TR>
-            <TR>
-                <TD>Faculty of Science</TD> 
-                <TD>Prof. Dr. Berna Yazıcı</TD><TD>bbaloglu@eskisehir.edu.tr</TD>
-            </TR>
-            <TR>
-                <TD>Engineering Faculty</TD> 
-                <TD>Prof. Dr. Ömer Nezih Gerek</TD><TD>ongerek@eskisehir.edu.tr</TD>
-            </TR>
-            <TR>
-                <TD>Porsuk Vocational School</TD> 
-                <TD>Prof. Dr. Özlem ONAY</TD><TD>oonay@eskisehir.edu.tr</TD>
-            </TR>
-            <TR>
-                <TD>Reporter</TD> 
-                <TD>Hasan AKIN</TD><TD>hasanakin@eskisehir.edu.tr</TD>
-            </TR>
-            </table>
-        
-
-            <h2 class="table-title">PERSONAL</h2>
-            <table BORDER align="center" 
-            class="table-style">
-            <TR style="font-weight: bold; font-size: 18px; text-transform: uppercase;">
-                <TD></TD> 
-                <TD>WOMAN</TD><TD>MAN</TD><TD>TOTAL</TD>
-            </TR>
-            <TR>
-                <TD>ACADEMICAL PERSONNEL</TD> 
-                <TD>315</TD><TD>408</TD><TD>723</TD>
-            </TR>
-            <TR style="font-size: 18px; text-transform: uppercase; font-weight: bold;">
-                <TD>Administrative Personnel</TD> 
-            </TR>
-            <TR>
-                <TD>General Administrative Classroom</TD> 
-                <TD>42</TD><TD>73</TD><TD>115</TD>
-            </TR>
-            <TR>
-                <TD>Health Services Class</TD> 
-                <TD>8</TD><TD>0</TD><TD>8</TD>
-            </TR>
-            <TR>
-                <TD>Technical Services Class</TD> 
-                <TD>14</TD><TD>57</TD><TD>71</TD>
-            </TR>
-            <TR>
-                <TD>Lawyer Services Class</TD> 
-                <TD>2</TD><TD>0</TD><TD>2</TD>
-            </TR>
-            <TR>
-                <TD>Auxiliary Services Class</TD> 
-                <TD>4</TD><TD>37</TD><TD>41</TD>
-            </TR>
-            <TR style="font-size: 18px; text-transform: uppercase; font-weight: bold;">
-                <TD >A total of administrative staff</TD> 
-                <TD>70</TD><TD>167</TD><TD>237</TD>
-            </TR>
-            <TR style="font-size: 18px; text-transform: uppercase; font-weight: bold;">
-                <TD>Worker Staff</TD> 
-            </TR>
-            <TR>
-                <TD>Cleaner</TD> 
-                <TD>57</TD><TD>97</TD><TD>154</TD>
-            </TR>
-            <TR>
-                <TD>Security Services Worker</TD> 
-                <TD>17</TD><TD>155</TD><TD>172</TD>
-            </TR>
-            <TR>
-                <TD>Technical Worker</TD> 
-                <TD>7</TD><TD>18</TD><TD>25</TD>
-            </TR>
-            <TR>
-                <TD>Office Worker</TD> 
-                <TD>67</TD><TD>21</TD><TD>88</TD>
-            </TR>
-            <TR style="font-size: 18px; text-transform: uppercase; font-weight: bold;">
-                <TD >Continuous worker staff total</TD> 
-                <TD>148</TD><TD>291</TD><TD>439</TD>
-            </TR>
-            <TR>
-                <TD>Staff under 4 / B of the Law No. 657</TD> 
-                <TD>35</TD><TD>90</TD><TD>125</TD>
-            </TR>
-            <TR>
-                <TD>Temporary Worker</TD> 
-                <TD>2</TD><TD>6</TD><TD>8</TD>
-            </TR>
-            <TR>
-                <TD>Permanent Worker</TD> 
-                <TD>1</TD><TD>6</TD><TD>7</TD>
-            </TR>
-            <TR  style="font-size: 18px; text-transform: uppercase; font-weight: bold;">
-                <TD>Labor Personnel Total</TD> 
-                <TD>38</TD><TD>102</TD><TD>140</TD>
-            </TR>
-            <TR style="font-size: 18px; text-transform: uppercase; font-weight: bold;">
-                <TD >TOTAL</TD> 
-                <TD>571</TD><TD>968</TD><TD>1539</TD>
-            </TR>
-            </table>
+            class="table-dark">  
+                <TR>
+                    <TD style=" font-size: 18px; font-weight: bold;">Natural Members</TD> 
+                    
+                </TR>
+                <TR>
+                    <TD>Rector</TD> 
+                    <TD>Prof. Dr. Tuncay DÖĞEROĞLU</TD><TD>tdogeroglu@eskisehir.edu.tr</TD>
+                </TR>   
+                <TR>
+                    <TD>Faculty of Science Dean</TD> 
+                    <TD>Prof. Dr. Yeliz MERT KANTAR</TD><TD>ymert@eskisehir.edu.tr</TD>
+                </TR>  
+                <TR>
+                    <TD>Dean of Aeronautics and Space Sciences</TD> 
+                    <TD>Prof. Dr. Öznur USANMAZ</TD><TD>ousanmaz@eskisehir.edu.tr</TD>
+                </TR>  
+                <TR>
+                    <TD>Dean of Architecture and Design Faculty V.</TD> 
+                    <TD>Prof. Dr. Osman TUTAL</TD><TD>otutal@eskisehir.edu.tr</TD>
+                </TR>
+                <TR>
+                    <TD>Dean of Engineering Faculty </TD> 
+                    <TD>Prof. Dr. Onur KAYA</TD><TD>onur_kaya@eskisehir.edu.tr</TD>
+                </TR>
+                <TR>
+                    <TD>Dean of Faculty of Sports Sciences V.</TD> 
+                    <TD>Prof. Dr. Metin ARGAN</TD><TD>margan@eskisehir.edu.tr</TD>
+                </TR>
+                <TR>
+                    <TD style="font-size: 18px; font-weight: bold;">Selected Members</TD> 
+                </TR>
+                <TR>
+                    <TD>Faculty of Science</TD> 
+                    <TD>Prof. Dr. Berna Yazıcı</TD><TD>bbaloglu@eskisehir.edu.tr</TD>
+                </TR>
+                <TR>
+                    <TD>Engineering Faculty</TD> 
+                    <TD>Prof. Dr. Ömer Nezih Gerek</TD><TD>ongerek@eskisehir.edu.tr</TD>
+                </TR>
+                <TR>
+                    <TD>Porsuk Vocational School</TD> 
+                    <TD>Prof. Dr. Özlem ONAY</TD><TD>oonay@eskisehir.edu.tr</TD>
+                </TR>
+                <TR>
+                    <TD>Reporter</TD> 
+                    <TD>Hasan AKIN</TD><TD>hasanakin@eskisehir.edu.tr</TD>
+                </TR>
+                </table>
+            
+    
+                <h2 class="modal-title">PERSONAL</h2>
+                <table BORDER align="center" 
+                class="table-dark">
+                <TR style="font-weight: bold; font-size: 18px; text-transform: uppercase;">
+                    <TD></TD> 
+                    <TD>WOMAN</TD><TD>MAN</TD><TD>TOTAL</TD>
+                </TR>
+                <TR>
+                    <TD>ACADEMICAL PERSONNEL</TD> 
+                    <TD>315</TD><TD>408</TD><TD>723</TD>
+                </TR>
+                <TR style="font-size: 18px; text-transform: uppercase; font-weight: bold;">
+                    <TD>Administrative Personnel</TD> 
+                </TR>
+                <TR>
+                    <TD>General Administrative Classroom</TD> 
+                    <TD>42</TD><TD>73</TD><TD>115</TD>
+                </TR>
+                <TR>
+                    <TD>Health Services Class</TD> 
+                    <TD>8</TD><TD>0</TD><TD>8</TD>
+                </TR>
+                <TR>
+                    <TD>Technical Services Class</TD> 
+                    <TD>14</TD><TD>57</TD><TD>71</TD>
+                </TR>
+                <TR>
+                    <TD>Lawyer Services Class</TD> 
+                    <TD>2</TD><TD>0</TD><TD>2</TD>
+                </TR>
+                <TR>
+                    <TD>Auxiliary Services Class</TD> 
+                    <TD>4</TD><TD>37</TD><TD>41</TD>
+                </TR>
+                <TR style="font-size: 18px; text-transform: uppercase; font-weight: bold;">
+                    <TD >A total of administrative staff</TD> 
+                    <TD>70</TD><TD>167</TD><TD>237</TD>
+                </TR>
+                <TR style="font-size: 18px; text-transform: uppercase; font-weight: bold;">
+                    <TD>Worker Staff</TD> 
+                </TR>
+                <TR>
+                    <TD>Cleaner</TD> 
+                    <TD>57</TD><TD>97</TD><TD>154</TD>
+                </TR>
+                <TR>
+                    <TD>Security Services Worker</TD> 
+                    <TD>17</TD><TD>155</TD><TD>172</TD>
+                </TR>
+                <TR>
+                    <TD>Technical Worker</TD> 
+                    <TD>7</TD><TD>18</TD><TD>25</TD>
+                </TR>
+                <TR>
+                    <TD>Office Worker</TD> 
+                    <TD>67</TD><TD>21</TD><TD>88</TD>
+                </TR>
+                <TR style="font-size: 18px; text-transform: uppercase; font-weight: bold;">
+                    <TD >Continuous worker staff total</TD> 
+                    <TD>148</TD><TD>291</TD><TD>439</TD>
+                </TR>
+                <TR>
+                    <TD>Staff under 4 / B of the Law No. 657</TD> 
+                    <TD>35</TD><TD>90</TD><TD>125</TD>
+                </TR>
+                <TR>
+                    <TD>Temporary Worker</TD> 
+                    <TD>2</TD><TD>6</TD><TD>8</TD>
+                </TR>
+                <TR>
+                    <TD>Permanent Worker</TD> 
+                    <TD>1</TD><TD>6</TD><TD>7</TD>
+                </TR>
+                <TR  style="font-size: 18px; text-transform: uppercase; font-weight: bold;">
+                    <TD>Labor Personnel Total</TD> 
+                    <TD>38</TD><TD>102</TD><TD>140</TD>
+                </TR>
+                <TR style="font-size: 18px; text-transform: uppercase; font-weight: bold;">
+                    <TD >TOTAL</TD> 
+                    <TD>571</TD><TD>968</TD><TD>1539</TD>
+                </TR>
+                </table>
+            </div>
         </div>
-        <footer>
+    </main>
+        <footer class="column-md-12" style="border: solid 10px transparent; margin: 0;">
             <ul>
                 <li><a href="https://www.instagram.com/eskisehirteknikuniv/">
-                    <img class="photo" style="background-color: transparent;"src=logo1.png height="40" width="40"></a></li>
+                        <img class="photo" style="background-color: transparent;" src=logo1.png height="40" width="40"></a>
+                </li>
                 <li><a href="https://www.linkedin.com/school/eskisehirteknikuniv/">
-                    <img class="photo" style="background-color: transparent;"src=logo2.png height="40" width="40"></a></li>
+                        <img class="photo" style="background-color: transparent;" src=logo2.png height="40" width="40"></a>
+                </li>
                 <li><a href="https://www.youtube.com/channel/UC-oGylb9E16KNqMnTP_kDoA">
-                    <img class="photo" style="background-color: transparent;"src=logo3.png height="40" width="40"></a></li>
-                    <p style="color: #911d0e;">Copyright © | Created By  Görkem Durmaz</p>
+                        <img class="photo" style="background-color: transparent;" src=logo3.png height="40" width="40"></a>
+                </li>
+                <p style="color: #911d0e;">Copyright © | Created By Görkem Durmaz</p>
             </ul>
         </footer>
     </body>

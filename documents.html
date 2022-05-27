@@ -7,19 +7,20 @@
         <meta name="description" content="BIM222 HW1 documents.html>
         <meta name="author" content="Görkem Durmaz">
         <link rel="stylesheet" href="external.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div style="width: 80%; margin: 20px; margin-left: 10%;">
+        <header style="margin: 20px; margin-left: 10%;display:block;" class="col-md-12">
             <a href="https://www.eskisehir.edu.tr/" style="margin-right: -80px;">
                 <img style="width: 10%; height: auto;" width="283" height="261" src="logo.png" title="Logo" />
             </a>
-            <h2 class="main" style="color: #911d0e; display: inline; margin: 0; position: absolute; margin-top: 20px;">ESKİŞEHİR TECHNICAL UNIVERSITY</h2>
-        </div>
-    
-        <div style="text-align: center; ">
-            <img class="photo" src="ESTU.jpeg" width="1024" height="500" title="Campus" style="border-radius: 30px;" />
-        </div>
-        <nav class="menu">
+            <h2 class="main" style="color: #911d0e; display: inline; margin: 0; margin-top: 20px;">
+                ESKİŞEHİR TECHNICAL UNIVERSITY</h2>
+        </header>
+            
+        <nav class="menu col-sm-2">
             <ul style="list-style-type: none;">
                 <li><a href="home.html"><button class="button">Home</button></a></li>
                 <li><a href="university.html"><button class="button">University</button></a></li>
@@ -27,22 +28,26 @@
                 <li class="dropdown">
                     <a href="students.html"><button class="button">Students</button></a>
                     <div class="dropdown-content">
-                        <a href="login.html"><button class="button">Login</button></a>
-                        <a href="documents.html"><button class="button">Documents</button></a>
+                        <a href="login.html"><button class="button" style="background-color: grey">Login</button></a>
+                        <a href="documents.html"><button class="button" style="background-color: grey">Documents</button></a>
                     </div>
                 </li>
                 <li><a href="research.html"><button class="button">Research</button></a></li>
                 <li><a href="campuslife.html"><button class="button">Campus Life</button></a></li>
             </ul>
         </nav>
+                <main class="col-sm-10">
         <div class="content">
-            <h2 class="table-title">Information for the Student</h2>
-            <h3 style="color: black;">Academic calendar</h3>
+            <div class="text-center">
+                <img class="photo" src="ESTU.jpeg" width="80%" height="500" title="Campus" style="border-radius: 30px;" />
+            </div>
+            <h2 class="modal-title"">Information for the Student</h2>
+            <h2 class="modal-title"">Academic calendar</h3>
             <div style="padding-top: 6px; font-size: 22px;">
                 <li><a href="https://www.eskisehir.edu.tr/tr/Icerik/Detay/2021-2022-akademik-yili-guz-donemi--2">FALL</a></li>
                 <li><a href="https://www.eskisehir.edu.tr/tr/Icerik/Detay/2021-2022-akademik-yili-bahar-donemi--2">SPRING</a></li>
             </div>
-            <h3><a style="color: black;" href="https://www.eskisehir.edu.tr/Icerik/Detay/genel-kabul-sartlari">General Admission Conditions</a></h3>
+            <h2 class="modal-title""><a href="https://www.eskisehir.edu.tr/Icerik/Detay/genel-kabul-sartlari">General Admission Conditions</a></h2>
             <p style="font-weight: bold;">Türk öğrenciler için;</p>
             <p style="margin-left: 5%; margin-right: 5%; letter-spacing: 1.05px;">Türkiye'de Yükseköğretim Kurumlarının önlisans ve lisans programlarına öğrenci alımında merkezî yerleştirme ve özel yetenek sınavı uygulanmaktadır. Merkezî yerleştirme; Ölçme, 
                 Seçme ve Yerleştirme Merkezi (ÖSYM) tarafından gerçekleştirilen Yükseköğretim Kurumları Sınavı (YKS) ile yapılmaktadır. İki aşamadan oluşan sınavın birinci aşaması Temel Yeterlilik Testi (TYT), 
@@ -60,19 +65,19 @@
                 Of foreign nationals, T.c. or TRNC nationality and the entire high school education is to be placed in the quotas, 
                 which completes their applications in a foreign country excluding the TRNC, and previously determined quotas in line with their preferred preferences.
             </p>
-            <h3><a style="color: black;">Farabi Exchange Program</a></h3>
+            <h2 class="modal-title"">Farabi Exchange Program</h2>
             <a style="text-decoration: none; font-size: 20px; color: orange; font-weight: bold;" href="https://farabi.eskisehir.edu.tr/">Click Here</a>
-            <h3><a style="color: black;" href="https://www.eskisehir.edu.tr/Icerik/Detay/uluslararasi-programlar">International Programs</a></h3>
+            <h2 class="modal-title""><a href="https://www.eskisehir.edu.tr/Icerik/Detay/uluslararasi-programlar">International Programs</a></h2>
             <p style="margin-left: 5%; margin-right: 5%; letter-spacing: 1px;">Being aware of the importance of internationalization of a university, Eskişehir Technical University offers student and staff mobility to 
                 European countries and many countries in different geographies of the world with Erasmus and Erasmus+ exchange programs.</p>
 
-            <h3><a style="color: black;" href="https://www.eskisehir.edu.tr/Icerik/Detay/staj">Internship</a></h3>
+            <h2 class="modal-title""><a  href="https://www.eskisehir.edu.tr/Icerik/Detay/staj">Internship</a></h2>
             <p style="margin-left: 5%; margin-right: 5%; letter-spacing: 1.05px;">At Eskişehir Technical University; There are training schools in applied programs such as Engineering, Aviation and Space Sciences, Faculties of Science, Architecture and Design and Vocational Schools. 
                 In compulsory education programs, it is a prerequisite for graduating from these programs. Internship plan, related unit trainings, course trainings, prepared and prepared by course guides, and evaluation
                  of the trips and reports to be made after vacation planning. is transmitted. On the other hand, Eskişehir Technical University offers training for some payment options. Various faculties, institutes, 
                  Psychological and Guidance Centers and laboratories can be accepted for the university training center. Current training announcements are available at www.uib.eskisehir.edu.tr.</p>
             
-            <h3><a style="color: black;" href="https://www.eskisehir.edu.tr/Icerik/Detay/akts-kredi-sistemi">ECTS Credit System</a></h3>
+            <h2 class="modal-title""><a  href="https://www.eskisehir.edu.tr/Icerik/Detay/akts-kredi-sistemi">ECTS Credit System</a></h2>
             <p style="margin-left: 5%; margin-right: 5%; letter-spacing: 1.05px;">“ECTS is a student-centered credit accumulation and transfer system based on learning outcomes and transparency of the learning process. 
                 ECTS aims to facilitate planning, delivery, assessment, recognition and validation for competences and learning components as well as student exchange. 
                 Although ECTS is widely used in higher education, it can also be applied in other lifelong learning activities.
@@ -85,9 +90,9 @@
                 In addition, for each course offered in Eskişehir Technical University, a course evaluation questionnaire and a general satisfaction survey are applied to the students, the results are shared with the relevant units, 
                 the improvement suggestions of the unit are evaluated in the Quality Commission and the improvement efforts are activated.</p>
             
-            <h2 class="table-title">FACULTY</h2>
-        <table BORDER align="center" 
-        class="table-style">
+            <h2 class="modal-title"">FACULTY</h2>
+            <table BORDER align="center" 
+            class="table-dark">
 
             <TR  style="font-weight: bold; font-size: 20px; text-transform: uppercase;" >
                 <TD>2020-2021 Academic Year</TD>
@@ -122,16 +127,20 @@
             </TR>
         </table>
         </div>
-        <footer>
-            <ul>
-                <li><a href="https://www.instagram.com/eskisehirteknikuniv/">
-                    <img class="photo" style="background-color: transparent;"src=logo1.png height="40" width="40"></a></li>
-                <li><a href="https://www.linkedin.com/school/eskisehirteknikuniv/">
-                    <img class="photo" style="background-color: transparent;"src=logo2.png height="40" width="40"></a></li>
-                <li><a href="https://www.youtube.com/channel/UC-oGylb9E16KNqMnTP_kDoA">
-                    <img class="photo" style="background-color: transparent;"src=logo3.png height="40" width="40"></a></li>
-                    <p style="color: #911d0e;">Copyright © | Created By  Görkem Durmaz</p>
-            </ul>
-        </footer>
+    </main>
+    <footer class="column-md-12" style="border: solid 10px transparent; margin: 0;">
+        <ul>
+            <li><a href="https://www.instagram.com/eskisehirteknikuniv/">
+                    <img class="photo" style="background-color: transparent;" src=logo1.png height="40" width="40"></a>
+            </li>
+            <li><a href="https://www.linkedin.com/school/eskisehirteknikuniv/">
+                    <img class="photo" style="background-color: transparent;" src=logo2.png height="40" width="40"></a>
+            </li>
+            <li><a href="https://www.youtube.com/channel/UC-oGylb9E16KNqMnTP_kDoA">
+                    <img class="photo" style="background-color: transparent;" src=logo3.png height="40" width="40"></a>
+            </li>
+            <p style="color: #911d0e;">Copyright © | Created By Görkem Durmaz</p>
+        </ul>
+    </footer>
     </body>
 </html>

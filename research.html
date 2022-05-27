@@ -7,6 +7,9 @@
         <meta name="description" content="BIM222 HW1 research.html>
         <meta name="author" content="Görkem Durmaz">
         <link rel="stylesheet" href="external.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
         <style>
         .photoResearch{
@@ -28,17 +31,15 @@
         </style>
     </head>
     <body>
-        <div style="width: 80%; margin: 20px; margin-left: 10%;">
+        <header style="margin: 20px; margin-left: 10%;display:block;" class="col-md-12">
             <a href="https://www.eskisehir.edu.tr/" style="margin-right: -80px;">
                 <img style="width: 10%; height: auto;" width="283" height="261" src="logo.png" title="Logo" />
             </a>
-            <h2 class="main" style="color: #911d0e; display: inline; margin: 0; position: absolute; margin-top: 20px;">ESKİŞEHİR TECHNICAL UNIVERSITY</h2>
-        </div>
-    
-        <div style="text-align: center; ">
-            <img class="photo" src="ESTU.jpeg" width="1024" height="500" title="Campus" style="border-radius: 30px;" />
-        </div>
-        <nav class="menu">
+            <h2 class="main" style="color: #911d0e; display: inline; margin: 0; margin-top: 20px;">
+                ESKİŞEHİR TECHNICAL UNIVERSITY</h2>
+        </header>
+            
+        <nav class="menu col-sm-2">
             <ul style="list-style-type: none;">
                 <li><a href="home.html"><button class="button">Home</button></a></li>
                 <li><a href="university.html"><button class="button">University</button></a></li>
@@ -46,30 +47,35 @@
                 <li class="dropdown">
                     <a href="students.html"><button class="button">Students</button></a>
                     <div class="dropdown-content">
-                        <a href="login.html"><button class="button">Login</button></a>
-                        <a href="documents.html"><button class="button">Documents</button></a>
+                        <a href="login.html"><button class="button" style="background-color: grey">Login</button></a>
+                        <a href="documents.html"><button class="button" style="background-color: grey">Documents</button></a>
                     </div>
                 </li>
-                <li><a href="research.html"><button class="onClickButton">Research</button></a></li>
+                <li><a href="research.html"><button class="button">Research</button></a></li>
                 <li><a href="campuslife.html"><button class="button">Campus Life</button></a></li>
             </ul>
         </nav>
+                <main class="col-sm-10">
         <div class="content">
             <p>Below is the graphic information about the research done at Eskişehir Technical University.</p>
-            <img class="photoResearch" src="photo1.png" width="1024" height="500" title="Campus" />
-            <img class="photoResearch" src="photo2.png" width="1024" height="500" title="Campus" />
-            <img class="photoResearch" src="photo3.png" width="1024" height="500" title="Campus" />
-            <img class="photoResearch" src="photo4.png" width="1024" height="500" title="Campus" />
+            <img class="photoResearch" src="photo1.png" width="1024" height="500" title="Research" />
+            <img class="photoResearch" src="photo2.png" width="1024" height="500" title="Research" />
+            <img class="photoResearch" src="photo3.png" width="1024" height="500" title="Research" />
+            <img class="photoResearch" src="photo4.png" width="1024" height="500" title="Research" />
         </div>
-        <footer>
+    </main>
+        <footer class="column-md-12" style="border: solid 10px transparent; margin: 0;">
             <ul>
                 <li><a href="https://www.instagram.com/eskisehirteknikuniv/">
-                    <img class="photo" style="background-color: transparent;"src=logo1.png height="40" width="40"></a></li>
+                        <img class="photo" style="background-color: transparent;" src=logo1.png height="40" width="40"></a>
+                </li>
                 <li><a href="https://www.linkedin.com/school/eskisehirteknikuniv/">
-                    <img class="photo" style="background-color: transparent;"src=logo2.png height="40" width="40"></a></li>
+                        <img class="photo" style="background-color: transparent;" src=logo2.png height="40" width="40"></a>
+                </li>
                 <li><a href="https://www.youtube.com/channel/UC-oGylb9E16KNqMnTP_kDoA">
-                    <img class="photo" style="background-color: transparent;"src=logo3.png height="40" width="40"></a></li>
-                    <p style="color: #911d0e;">Copyright © | Created By  Görkem Durmaz</p>
+                        <img class="photo" style="background-color: transparent;" src=logo3.png height="40" width="40"></a>
+                </li>
+                <p style="color: #911d0e;">Copyright © | Created By Görkem Durmaz</p>
             </ul>
         </footer>
     </body>
